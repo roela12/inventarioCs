@@ -9,10 +9,10 @@ class Skin {
 }
 
 // skins disponibles
-const fireserpent = new Skin("Fire serpent", "AK47", 500, "");
-const karambit_fade = new Skin("Fade", "Karambit", 1000, "");
-const dragon_lore = new Skin("Dragon lore", "AWP", 1500, "");
-const bluegem = new Skin("Blue Gem", "AK47", 2000, "");
+const fireserpent = new Skin("Fire serpent", "AK47", 500, "fireserpent.png");
+const karambit_fade = new Skin("Fade", "Karambit", 1000, "karambit.png");
+const dragon_lore = new Skin("Dragon lore", "AWP", 1500, "dragonlore.png");
+const asimov = new Skin("asimov", "AK47", 2000, "akasimov.png");
 
 // array para guardar las skins ya compradas
 const mis_skins = [];
@@ -49,11 +49,11 @@ function vender(nombre_skin) {
 
 // funcion para actualizar los dolares y las skins del HTML
 function actualizarHTML() {
-  mis_skins.innerHTML = "";
+  muestra_mis_skins.innerHTML = "";
   for (const skin of mis_skins) {
     const li = `
         <li onclick="vender('${skin.nombre}')">
-          <img src="img/${skin.imagen}" alt="${skin.imagen}" />
+          <img src="images/${skin.imagen}" alt="${skin.imagen}" />
         </li>
         `;
     muestra_mis_skins.innerHTML += li;
