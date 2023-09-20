@@ -3,12 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inventario</title>
+    <title>Compra y venta de armas de cs</title>
+    <!--estilos-->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!--area de compra-->
     <section>
-      <h1></h1>
+      <h1>Seleccione la skin de counter strike que desea comprar:</h1>
+      <ul>
+        <li onclick="comprar(fireserpent)">
+          ak47 fireserpent <span>500usd</span>
+        </li>
+        <li onclick="comprar(karambit_fade)">
+          karambit fade <span>1000usd</span>
+        </li>
+        <li onclick="comprar(dragon_lore)">
+          awp dragon lore <span>1500usd</span>
+        </li>
+        <li onclick="comprar(bluegem)">ak47 blue gem <span>2000usd</span></li>
+      </ul>
+      <!--area de mis skins-->
+    </section>
+    <section>
+      <h2>Skins compradas:</h2>
+      <ul id="mis_skins"></ul>
+      <h2 id="usd">Cantidad de dolares disponibles: <span></span></h2>
     </section>
     <script src="inventario.js"></script>
   </body>
